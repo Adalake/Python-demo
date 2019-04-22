@@ -5,7 +5,7 @@ import requests
 
 url = "https://movie.douban.com/chart"
 f = requests.get(url)                 #Get该网页从而获取该html内容
-soup = BeautifulSoup(f.content, "lxml")  #用lxml解析器解析该网页的内容, 好像f.text也是返回的html
+soup = BeautifulSoup(f.content, "lxml")  #用lxml解析器解析该网页的内容, f.text也是返回的html
 #print(f.content.decode())
 #content = soup.find_all('div',class_="p12" )   #因为calss和关键字冲突，所以改名class_
 
